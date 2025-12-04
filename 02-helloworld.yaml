@@ -1,0 +1,7 @@
+- name: hellowrold
+  hosts: local
+  connection: local
+  tasks:
+  - name: print hellowrold
+    ansible.builtin.debug:
+      msg: "Hello Madhu"
