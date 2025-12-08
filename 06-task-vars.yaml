@@ -10,7 +10,7 @@
     vars:
       Course: Ansible
     ansible.builtin.debug:
-      msg: "Hello {{ course }} ,course Duration: {{Duration}} , Trainer {{Trainer}}"
+      msg: "Hello {{ Course }} ,Course Duration: {{Duration}} , Trainer {{Trainer}}"
   - name: print course info again
     ansible.builtin.debug:
       msg: "Hello {{ course }} ,course Duration: {{Duration}} , Trainer {{Trainer}}"
