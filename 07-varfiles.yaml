@@ -1,0 +1,9 @@
+- name: variables from flies
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: print couse info
+    ansible.builtin.debug:
+     msg: msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
