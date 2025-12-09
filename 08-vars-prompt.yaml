@@ -1,7 +1,7 @@
 - name: variables frpm prompt 
   hosts: local
   connection: local
-  vars-prompt:
+  vars_prompt:
   - name: USERNAME
     prompt: Please enter your name
     private: true
