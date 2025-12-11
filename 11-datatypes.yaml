@@ -1,4 +1,4 @@
-- name: ansible datatypes
+- name: ansible data types
   hosts: local
   connection: local
   vars:
@@ -6,9 +6,9 @@
     Course: "Devsecops with AWS"
     IS_LIVE: true
     Tools:
-    - Linux
-    - Shell
-    - Ansible
+      - Linux
+      - Shell
+      - Ansible
   Concepts:
     CI: Jenkins
     Scripting: "Shell,Ansible,Terraform"
