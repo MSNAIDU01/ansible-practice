@@ -6,12 +6,12 @@
     Course: "Devsecops with AWS"
     IS_LIVE: true
     Tools:
-      - Linux
-      - Shell
-      - Ansible
-  Concepts:
-    CI: Jenkins
-    Scripting: "Shell,Ansible,Terraform"
+    - Linux
+    - Shell
+    - Ansible
+    Concepts:
+      CI: Jenkins
+      Scripting: "Shell,Ansible,Terraform"
   tasks:
   - name: print course info
     ansible.builtin.debug:
