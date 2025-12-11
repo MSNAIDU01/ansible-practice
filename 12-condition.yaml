@@ -10,5 +10,5 @@
     when: Number <= 100
   - nmae : print the number greaterthan or equal to 100
     ansible.builtin.debug:
-      msg: "Given number {{ Number }} is greaterthan or equal to 100"
-    when: Number >= 100
+      msg: "Given number {{ Number }} is greaterthan to 100"
+    when: Number > 100
