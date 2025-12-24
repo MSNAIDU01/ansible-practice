@@ -3,3 +3,7 @@
   tasks:
   - name: redirect ls output to a file 
     ansible.builtin.shell: "ls -ltr > /temp/output.txt"
+    register: command_result
+  - name: print the out come 
+    ansible.builtin.debug:
+      msg: "{{ command_result}}"
