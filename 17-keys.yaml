@@ -1,0 +1,13 @@
+- name: ping the server
+  hosts: Frontend
+  become: yes
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: installed
+  - name: Run the niginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
